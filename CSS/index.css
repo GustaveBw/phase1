@@ -1,7 +1,24 @@
+@charset "utf-8"; 
+
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+}
 ul {
     list-style: none;
+
 }
 
 h1{
     background-color: rgb(111, 111, 187); color: aliceblue;
+}
+
+.menu{
+    display: flex;
+}
+.menu ul {
+    margin: 0px 25px;
+}
+.menu ul li{
+    
 }

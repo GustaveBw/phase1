@@ -1,0 +1,15 @@
+@charset "utf-8"; 
+
+header{
+    background-color: #900c3f;
+    color: #f1d6d6;
+    height: 100px;
+}
+
+body{
+    background-color:  #f5deb3;
+}
+nav{
+    height: 60px;
+    background-color:#daf7a6 ;
+}

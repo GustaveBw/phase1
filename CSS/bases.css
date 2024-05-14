@@ -1,0 +1,11 @@
+@charset "utf-8"; 
+
+
+.menu {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black; 
+    }
+
+a{
+    text-decoration: none;
+}
