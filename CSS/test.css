@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+
+/* *{
+    border:solid 1px orange;
+} */
+
+
+/* fonts a deplacer  */
+
+@font-face{
+	font-family:'ganon'; 
+	src:url("../Fonts/ReturnOfGanonRegular-3ReM.ttf");	
+}
+
+@font-face{
+	font-family:'start'; 
+	src:url("../Fonts/");	
+}
+
+
+
+
+
+
+
+
+
+
+/* presentation  */
+h2{
+    display: inline;
+    font-family:'ganon'
+}
+
+.menu{ 
+    margin: auto;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+body{
+    background-color: rgb(170, 224, 184);  
+}
+body main{
+    text-align: center;
+}
+
+hr{
+    border: solid 2px ;
+    color: black ;
+}
+nav{
+    font-family: 'start';
+}
+
+
+.pictos-flex div{
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div {
+    text-align: center;
+}
+
+div a p{
+    text-align: center;
+    margin: auto;
+}
+
+
+
+/* responsive  */
+
+
+@media screen {
+    
+}
