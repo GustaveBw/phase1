@@ -1,0 +1,26 @@
+@charset "utf-8"; 
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body{
+    font-family: "Anton";
+    border: 2px solid ;
+}
+
+tbody #titre{
+    background-color: rgb(126, 126, 223);
+    color: blueviolet;
+    text-align: center;
+}
+
+body.full{
+    width: 20%;
+    border:solid rgb(32, 32, 73) 1px;
+}
+.total{
+    font-weight: 700;
+}

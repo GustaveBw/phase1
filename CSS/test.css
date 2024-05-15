@@ -21,9 +21,9 @@
 
 
 
-
-
-
+html {
+    height: 100%;
+  }
 
 
 
@@ -42,6 +42,9 @@ nav ul li{
 }
 body{
     background-color: rgb(170, 224, 184);  
+        min-height: 100%;
+        display: grid;
+        grid-template-rows: 1fr auto;
 }
 body main{
     text-align: center;
@@ -50,18 +53,23 @@ body main{
 hr{
     border: solid 2px ;
     color: black ;
+    width: 85%;
 }
 nav{
     font-family: 'start';
 }
 
 
-.pictos-flex div{
+/* .pictos-flex div{
     display: flex;
     justify-content: space-between;
     max-width: 50%;
     margin-left: auto;
     margin-right: auto;
+} */
+
+.sticky{
+    
 }
 div {
     text-align: center;
@@ -72,7 +80,11 @@ div a p{
     margin: auto;
 }
 
-
+.footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  
 
 /* responsive  */
 

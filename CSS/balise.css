@@ -1,15 +1,16 @@
 @charset "utf-8"; 
 
-header{
-    background-color: #900c3f;
-    color: #f1d6d6;
-    height: 100px;
+h1{
+    background-color: aquamarine;
 }
-
-body{
-    background-color:  #f5deb3;
+/* section{
+    color: saddlebrown;
+} */
+.couleur{
+    background-color: blue;
+    color: aliceblue;
+    list-style: none;
 }
-nav{
-    height: 60px;
-    background-color:#daf7a6 ;
+section p :last-child{
+    color: rgb(184, 218, 61);
 }
