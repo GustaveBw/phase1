@@ -1,0 +1,49 @@
+@charset "utf-8";
+*{
+    text-align: center;
+}
+.content{
+    height: auto;
+}
+body{
+
+    width: 90%;
+    background-color: brown;
+    margin:15% auto ;
+}
+header{
+    background-color: blueviolet;
+    height: 40px;
+    text-align: left;
+}
+nav{
+    background-color: rgb(62, 31, 90);
+}
+
+main{
+    background-color: rgb(117, 75, 13);
+}
+footer{
+    padding-top: 10px;
+    background-color: black;
+    padding-top: 20px;
+    color: aliceblue;
+}
+section{
+    background-color: blanchedalmond;
+    height: 500px;
+    border: 20 solid rgb(187, 152, 101);
+}
+
+
+@media only screen and (max-width : 1200px){
+
+}
+
+@media only screen and (max-width : 700px){
+
+}
+
+@media only screen and (max-width : 400px){
+
+}
