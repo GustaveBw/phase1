@@ -2,25 +2,60 @@
 
 .anton-regular {
     font-family: "Anton", sans-serif;
-    font-weight: 400;
     font-style: normal;
   }
   
 body{
     font-family: "Anton";
-    border: 2px solid ;
+    /* border: 2px solid ; */
 }
+table{
+    width: 50%;
+    margin: auto;
+    border-collapse:collapse;
+    border: solid 5px rgb(133, 46, 128);
 
-tbody #titre{
-    background-color: rgb(126, 126, 223);
-    color: blueviolet;
+}
+td{
+    border: 1px solid rgb(126, 126, 223);
     text-align: center;
 }
 
-body.full{
-    width: 20%;
-    border:solid rgb(32, 32, 73) 1px;
+th{
+    width: 25%;
+    background-color:rgba(199, 140, 214, 0.705);
+    /* padding: 4px; */
 }
-.total{
-    font-weight: 700;
+tfoot{
+background-color: rgba(148, 100, 194, 0.781);
+border: 1px double black;
+ }
+
+th#titre{
+  width:100%
+
 }
+tbody{
+    border: solid 1px black;
+}
+.boo{
+    border: solid;
+}
+
+caption{
+ background-color: blueviolet;
+ color: rgb(255, 255, 255);
+ font-size: 30px;
+ padding: 10px;
+}
+
+td:first-child{
+    background-color: rgba(207, 109, 226, 0.801);
+    text-align: left;
+    padding-left: 12px;
+}
+tr :first-child {
+    border: dashed 1px rgb(68, 0, 255);
+
+}
+
