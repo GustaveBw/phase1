@@ -33,15 +33,10 @@ h2{
     font-family:'ganon'
 }
 
-.menu{ 
-    margin: auto;
-}
 
-nav ul li{
-    list-style-type: none;
-}
 body{
-    background-color: rgb(170, 224, 184);  
+    /* background-color: rgb(170, 224, 184);   */
+    background-image:url(../IMG/Background/806145.jpg);
         min-height: 100%;
         display: grid;
         grid-template-rows: 1fr auto;
@@ -89,6 +84,18 @@ div a p{
 /* responsive  */
 
 
-@media screen {
-    
+@media only screen and (max-width : 540px){
+
+    body{
+        background-image: url(../IMG/Background/Smartphone/wp7771812.jpg);
+      
+    }
+    main{
+        background-color: rgba(0, 0, 0, 0.658);
+        color: aliceblue;
+    }
+    hr{
+        color: rgb(255, 255, 255);
+    }
+
 }
