@@ -1,0 +1,66 @@
+@charset "utf-8";
+h2{
+    display: inline;
+    margin: o o o ;
+    color: rgb(15, 165, 95);
+}
+nav ul{
+    list-style: none;
+}
+nav{
+   
+    background: rgb(2,0,36);
+background: -moz-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(133,255,129,1) 0%, rgba(0,122,147,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(133,255,129,1) 0%, rgba(0,122,147,1) 100%);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(133,255,129,1) 0%, rgba(0,122,147,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#007a93",GradientType=1);
+}
+nav ul li{
+    display: inline;
+    justify-content: space-between;
+    color: aliceblue;
+}
+:hover nav ul li
+main{
+    margin: auto;
+    width: 90%;
+}
+
+body{
+    background-color: rgb(194, 255, 179);
+}
+.ecrits{
+    margin: auto;
+    width:70% ;
+    background-color: rgba(255, 255, 255, 0.959);
+    border: solid 2px rgb(64, 167, 50);
+}
+hr{
+    border: solid 1px green;
+}
+header{
+    display: inline;
+}
+main{
+ 
+}
+p{
+    width: 90%;
+    margin: auto;
+}
+
+/* media Queries */
+
+@media only screen and (max-width : 700px){
+
+ nav ul {
+    display: inline-block;
+ }
+
+}
+
+@media only screen and (max-width : 1200px){
+
+ 
+
+}
