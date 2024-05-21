@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.flex-container{
+    display: flex;
+    background-color: rgb(65, 150, 225);
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px ;
+    /* padding: 20px;  */
+    font-size: 30px;
+    width: 50%;
+}
