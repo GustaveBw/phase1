@@ -1,0 +1,104 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full{
+    width: 1400px;
+    margin: auto;
+    border: 1px solid black;
+    background-color: grey;
+    min-height: 400px;
+}
+header{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(10, 168, 168, 0.342);
+    line-height: 60px;
+}
+nav{
+    height: 30px;
+    text-align: center;
+    background-color: rgba(164, 95, 230, 0.534);
+}
+#globe{
+    background-color: darkorange;
+    padding: 10px 10px 30px 10px;
+}
+.meme{
+    border: 1px solid white;
+    background-color: cornflowerblue;
+    width: 50%;
+    height: 130px;
+}
+section{
+    margin: auto;
+    width: 70%;
+    display: flex;
+   
+    min-height: 100px;
+
+}
+footer{
+    height: 70px;
+    text-align: center;
+    background-color: crimson;
+}
+/* #globe :first-child{
+    background-color: black;
+} */
+
+.container{
+    width: 840px;
+    height: 440px;
+    
+    margin: auto;
+    display: flex;
+
+}
+.right, .left {
+
+   
+    height: 440px;
+    height: 440px;
+   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left{
+  
+}
+.right div , .left div{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    margin: 5px;
+}
+.left div{
+    background-color: aqua;
+}
+
+.right2, .left2 {
+
+   
+    height: 440px;
+    height: 440px;
+   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left2{
+  
+}
+.right2 div , .left2 div{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(202, 127, 127);
+    margin: 5px;
+}
+.left2 div{
+    background-color: rgb(37, 95, 95);
+}
