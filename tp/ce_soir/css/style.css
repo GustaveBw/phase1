@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+.caveat-brush-regular {
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  border: solid 1px black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.full {
+  width: 100%;
+}
+hr {
+  background-color: #e53f6f;
+  height: 7px;
+  width: 5%;
+}
+header {
+  background-image: url(../img/wood.jpg);
+  height: 915px;
+}
+header img {
+  display: block;
+  margin: auto;
+}
+nav {
+    height: 75px;
+  display: flex;
+  justify-content: space-between;
+     align-items: center;
+}
+nav ul {
+ 
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+nav img {
+  text-align: center;
+}
+nav ul li {
+  list-style: none;
+}
+
+main section {
+  display: flex;
+  flex-direction: row;
+}
+.bloc1 {
+  height: 820px;
+  width: 100%;
+}
+.bloc1 .text1 {
+  width: 30%;
+}
+.bloc1 .img1 {
+  width: 60%;
+}
+
+.bloc2 {
+  height: 900px;
+  order: 1;
+}
+.bloc2 .img{
+    width: 90%;
+}
+
+.bloc3 {
+  height: 745px;
+}
+.bloc3 .img1{
+     margin: auto;
+     text-align: center;
+    
+}
+.bloc3>.img1>img{
+    width: 50%;
+}
+
+
+
+.last {
+  height: 820px;
+ }
+.last img {
+
+}
+
+footer {
+  background-image: url("../img/motif.jpg");
+  height: 540px;
+  display: flex;
+  justify-content: space-between;
+}
+footer div {
+  margin: 35px;
+}
+
+.adress{
+    height: 50%;
+
+}
+.icones {
+  width: 12%;
+}
+.icones i .fa-brands {
+  width: 50%;
+}
+/* 
+@media screen and (max-width: 1200px) {
+  .full {
+    width: 80%;
+    background-color: pink;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .full {
+    width: 80%;
+    background-color: rgb(86, 180, 212);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .full {
+    width: 100%;
+    background-color: violet;
+  }
+} */
+@media screen and (max-width: 1200px) {
+  .full {
+    width: 80%;
+    margin: 0 auto; /* Ajouté pour centrer */
+    background-color: pink;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .full {
+    width: 80%;
+    margin: 0 auto; /* Ajouté pour centrer */
+    background-color: rgb(86, 180, 212);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .full {
+    width: 100%;
+    margin: 0 auto; /* Ajouté pour centrer */
+    background-color: violet;
+  }
+
+  header {
+  height: 915px;
+}
+
+
+nav ul {
+ 
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+nav img {
+  text-align: center;
+}
+}
+
+
