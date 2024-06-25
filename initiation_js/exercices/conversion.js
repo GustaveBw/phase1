@@ -7,3 +7,14 @@ fahrenheit = celsius * 1.8 + 32;
 
 document.write(celsius + "°C est  " + fahrenheit + " en °F");
 
+function test() {
+    
+
+
+
+
+
+
+
+    
+}

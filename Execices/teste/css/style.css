@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+.bg {
+  background-color: black;
+}
+.full {
+  max-width: 1450px;
+  padding: 0 15px;
+}
+
+header {
+  width: 100%;
+  background-color: yellowgreen;
+  height: 150px;
+}
+
+nav ul {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: aliceblue;
+}
+nav ul li a:hover {
+  color: brown;
+}
+
+
+
+
+footer {
+  height: 50px;
+}
+.footer_flex {
+    
+  list-style-type: none;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+/* Pour les écrans de téléphone */
+@media (max-width: 600px) {
+  /* Styles spécifiques aux téléphones */
+}
+
+/* Pour les tablettes */
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Styles spécifiques aux tablettes */
+}
+
+/* Pour les ordinateurs de bureau */
+@media (min-width: 1025px) {
+  /* Styles spécifiques aux desktops */
+}
