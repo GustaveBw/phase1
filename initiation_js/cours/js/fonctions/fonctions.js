@@ -1,5 +1,5 @@
 // Fonctions;
-// Pour profiter de la fonctionnalitée d'un fonction dans n'importe quel langage de programation, il est indispensable de suivre les étapes suivantes:  
+// Pour profiter de la fonctionnalitée d'un fonction dans n'importe quel langage de programmation, il est indispensable de suivre les étapes suivantes:  
 // 1 - implanter ou declarer une fonction 
 // 2 - Executer la fonction 
 

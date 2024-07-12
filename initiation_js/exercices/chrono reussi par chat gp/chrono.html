@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Chronomètre</title>
+</head>
+
+<body>
+    <main>
+        <div class="boutons">
+            <button id="startBtn"><i class="fa-solid fa-play"></i></button>
+            <button id="stopBtn"><i class="fa-solid fa-stop"></i></button>
+            <button id="resetBtn"><i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+        <div id="display">00:00:00</div>
+    </main>
+
+    <script>
+        // Votre code JavaScript ici
+        let startTime;
+        let elapsedTime = 0;
+        let timerInterval;
+
+        function timeToString(time) {
+            let diffInHrs = time / 3600000;
+            let hh = Math.floor(diffInHrs);
+            let diffInMin = (diffInHrs - hh) * 60;
+            let mm = Math.floor(diffInMin);
+            let diffInSec = (diffInMin - mm) * 60;
+            let ss = Math.floor(diffInSec);
+            let formattedHH = hh.toString().padStart(2, "0");
+            let formattedMM = mm.toString().padStart(2, "0");
+            let formattedSS = ss.toString().padStart(2, "0");
+            return `${formattedHH}:${formattedMM}:${formattedSS}`;
+        }
+
+        function start() {
+            startTime = Date.now() - elapsedTime;
+            timerInterval = setInterval(function printTime() {
+                elapsedTime = Date.now() - startTime;
+                document.getElementById("display").innerHTML = timeToString(elapsedTime);
+            }, 1000);
+        }
+
+        function stop() {
+            clearInterval(timerInterval);
+        }
+
+        function reset() {
+            clearInterval(timerInterval);
+            document.getElementById("display").innerHTML = "00:00:00";
+            elapsedTime = 0;
+        }
+
+        let startBtn = document.getElementById("startBtn");
+        let stopBtn = document.getElementById("stopBtn");
+        let resetBtn = document.getElementById("resetBtn");
+
+        startBtn.addEventListener("click", start);
+        stopBtn.addEventListener("click", stop);
+        resetBtn.addEventListener("click", reset);
+    </script>
+</body>
+
+</html>

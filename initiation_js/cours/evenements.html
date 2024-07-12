@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evènements</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .rouge {
+            background-color: red;
+        }
+
+        .bleu {
+            background-color: blue;
+        }
+
+        #madiv {
+            width: 250px;
+        }
+    </style>
+
+    <script>
+        window.addEventListener("load", function () {
+            let maDiv = document.querySelector("#madiv");
+            console.log(maDiv);
+
+            maDiv.addEventListener("click", function (evt) {
+                alert("click sur #madiv");
+                console.log(evt);
+            })
+
+            maDiv.addEventListener("mouseenter", function (event) {
+                console.log("le curseur entre dans la div");
+                this.style.backgroundColor = "yellow";
+                //this.style.display = "none";
+
+
+            });
+
+            maDiv.addEventListener("mouseleave", function (event) {
+                console.log("le curseur sort dans la div");
+                this.style.backgroundColor = "red";
+
+
+            })
+
+
+            let divRouge = document.querySelector(".rouge:nth-child(2)");
+            divRouge.addEventListener("mousemove", function (event) {
+                console.log(event);
+                this.innerHTML = "<ul><li>X : " + event.clientX + "</li>"
+                    + "<li>Y : " + event.clientY + "</li></ul>";
+            });
+
+
+        });
+        // Recuperer un element avec son id 
+        document.getElementById("maviv").style.border = "1px solid green";
+
+        // recuperer les elements avec une classe
+
+
+        let rouges = document.getElementsByClassName("rouge").for(let i = 0; i < rouges.length; i++) {
+            rouges[i].style.fontSize = "50px";
+        }
+
+
+        // récuperer les elements avec le nom de la balise 
+        document.getElementsByTagName("body"[0].style.backgroundColor = "lightgray");
+
+        // récuperer les elements avec la propriété name
+        document.getElementsByName("password");
+        // les éléments qui ont un attribut 'name' sont les <input>, <select>, <textarea> que l'on retrouve dans les balise <form>
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <div id="madiv" class="rouge">
+        texte
+    </div>
+    <div class="rouge">rouge</div>
+    <div class="bleu">bleu</div>
+    <a href="objet.html">Objets</a>
+    <hr>
+    <div id="resultat"></div>
+</body>
+
+</html>

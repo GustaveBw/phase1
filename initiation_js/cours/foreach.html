@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>FOREACH</h2>
+    <P>La boucle FOREACH est une boucle utilisée pour les tableaux dans différents langages de programmation. En JS,
+        cette boucle est liée aux objets de type array</P>
+    <p>Syntaxe: </p>
+    <code><pre><i>tableau</i>.foreach( function(valeur, indice...) {
+        <i>instructions...</i>
+        })
+       </pre></code>
+
+    <p>Dans FOREACH, on va déclarer une fonction qui va s'appliquer sur toutes les valeurs du tableau.</p>
+
+    <script>
+        let semaine = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
+        semaine.foreach(function (valeur, indice) {
+            document.write("la " + indice + "éme valeur du tableau est " + valeur);
+            document.write("br")
+        }); 
+    </script>
+
+    <h2>FOR OF</h2>
+    <p>une autre version de la boucle FOREACH en JS est la boucle FOR OF
+    </p>
+    <p>Syntaxe: </p>
+
+    <code>
+        <pre>
+            for(const <i>valeur</i> of <i>tableau</i>){
+                <i>...instructions...</i>
+            }
+        </pre>
+    </code>
+    <p>Pour chaque valeur du tableau, on va éxecuter les instructions de la boucle.</p>
+    <script>
+        for (const jour of semaine) {
+                document.write(jour+"<br>"); 
+            }
+    </script>
+    <p>ici on ne récupère pas les indices, uniquemebt les valeurs qui sont affectées a une nouvelle variable ( dans l'exemple, c'est la variable <i>jour</i>). </p>
+</body>
+
+</html>
