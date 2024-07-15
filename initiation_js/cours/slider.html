@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliders</title>
+
+    <style>
+        #slider {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            border: 1px solid black;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        .nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, .5);
+            color: aliceblue;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #prev {
+            left: 10px;
+        }
+
+        #next {
+            right: 10px;
+        }
+
+        #slider + div {
+            width: 300px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function () {
+            const slideImages = document.querySelectorAll(".slide");
+            console.log(slideImages);
+            // slideImages.forEach(function (elementSlide){
+            //         elementSlide.classList.add("active");
+            // }); 
+            let pos = 1;
+            document.querySelector("#next").addEventListener("click", function (event) {
+                console.log("click sur next", pos);
+                // On enleve la classe 'active' a toutes les images
+                slideImages.forEach(function (elementSlide) {
+                    elementSlide.classList.remove("active")
+                });
+
+                // on ajoute la classe 'active' a la prochaine image
+                slideImages[pos].classList.add("active");
+
+                // 'pos' augmente de 1 sauf si l'on etait positionné a la derniere image
+                // dans ce cas, pos vaut 0
+                if (pos == slideImages.length - 1) {
+                    pos = 0;
+                } else {
+                    pos++;
+                }
+            });
+
+
+
+
+            document.querySelector("#prev").addEventListener("click", function (event) {
+
+                if (pos == 0) {
+                    pos = slideImages.length - 1;
+                } else {
+                    pos--;
+                }
+                slideImages.forEach(function (elementSlide) {
+                    elementSlide.classList.remove("active")
+                });
+                slideImages[pos].classList.add("active");
+
+
+            });
+
+            let timer = setInterval(function () {
+                // on peut déclencher un evenement avec la methode 
+                // dispachtEvent
+                document.querySelector("#next").dispatchEvent(new Event("click"));
+            }, 2000);
+
+            document.querySelector("#stop").addEventListener("click", function () {
+
+                // la fonction Clearinterval arrete l'executionautomatique 
+                // définie avec set interval. I'll faut passer la valeur retournée
+                // par set interval pour arreter le processus voulu.
+                clearInterval(timer);
+            })
+
+            // let temps = 0;
+            // setInterval(function () {
+
+            //     console.log(temps++);
+            // } 1000);
+
+            document.querySelector("#image").addEventListener("click", function(event){
+
+            });
+
+        }); 
+
+
+
+
+
+
+
+
+        /* Avec querySelectorAll ("[id ^= 'image']"), je recupere tous les elements  HTML dont l'attribut 'id' commence par une image .
+        
+        Lamethode forEach va me permettre de metre un ecouteur d'evenenment sur chacun des elemens HTML*/
+document.querySelectorAll("[id ^= 'image']")
+
+
+
+/* En JS, si une chaine de caracteres ne contient que des chiffres, elle peut etre utilisé comme un type ''number.
+Je decremente le numero pour avoir la position de l'image dans la liste slideImage. */
+numero--; 
+/*J'ajoute la classe'active' a l'image qui correspond ==> cette image est visible dans le slide. */
+slideImages[numero].classList.add("active"); 
+/* J'arrete le défilement automatique du slider*/
+
+
+
+        
+
+
+        
+    </script>
+</head>
+
+<body>
+
+
+    <div id="slider">
+        <img src="img/image1.jpg" alt="image1" class="slide active">
+        <img src="img/image2.jpg" alt="image2" class="slide">
+        <img src="img/image3.jpg" alt="image3" class="slide">
+        <button id="prev" class="nav">&lt;</button>
+
+        <button id="next" class="nav">&gt;</button>
+        <button class="nav" id="stop">⏹</button>
+    </div>
+
+    <div>
+        <a href="#1" id="image1">1</a>
+        <a href="#2" id="image2">2</a>
+        <a href="#3" id="image3">3</a>
+    </div>
+
+
+</body>
+
+</html>

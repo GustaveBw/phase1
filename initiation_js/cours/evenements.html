@@ -67,7 +67,8 @@
         // recuperer les elements avec une classe
 
 
-        let rouges = document.getElementsByClassName("rouge").for(let i = 0; i < rouges.length; i++) {
+        let rouges = document.getElementsByClassName("rouge"); 
+        for(let i = 0; i < rouges.length; i++) {
             rouges[i].style.fontSize = "50px";
         }
 
@@ -77,6 +78,7 @@
 
         // récuperer les elements avec la propriété name
         document.getElementsByName("password");
+        
         // les éléments qui ont un attribut 'name' sont les <input>, <select>, <textarea> que l'on retrouve dans les balise <form>
 
 
