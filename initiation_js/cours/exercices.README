@@ -1,0 +1,193 @@
+/*
+1. Déclarer un tableau vide nommé nombresEntiers
+   faire une boucle pour ajouter les 100 premiers nombres 
+    (de 1 à 100) dans le tableau
+    
+3. déclarer un tableau vide nommé carresNbEntiers qui 
+	contiendra des tableaux de 2 valeurs :
+    	le nombre entier,
+        le carré du nombre entier
+        
+  Par exemple : 
+  	[
+    	[ 1, 1 ],
+        [ 2, 4 ],
+        [ 3, 9 ],
+        [ 4, 16 ]
+    ]
+    
+    Faire une boucle qui remplit le tableau carresNbEntiers avec 
+    tous les nombres pairs de 2 à 100
+*/
+const carresNbEntiers = [];
+for(let i = 0; i < 100; i += 2){
+	carresNbEntiers.push( [ i, i*i ] );
+}
+
+
+
+
+/*
+ 
+    
+ NB :Pour les exercices demandant d'écrire une fonction, mettez ces fonctions dans un 
+ 	fichier exercice_fonctions.js et faites l'affichage dans un fichier html
+ 
+4. Ecrire la fonction superieur(a, b)
+		- Cette fonction retourne TRUE si a est supérieur à b sinon retourne FALSE
+        Par exemple :
+        superieur(46, 17) retourne TRUE
+        superieur(17, 46) retourne FALSE
+        superieur(17, 17) retourne FALSE
+        
+        En utilisant la fonction superieur(), comparez 2 variables (nb1 et nb2) 
+        	et affichez :
+            "nb1 est supérieur à nb2" ou "nb1 est inférieur à nb2" 
+            (nb1 et nb2 doivent être remplacé par leur valeur)
+    	Utilisez cette fonction avec les différentes valeurs suivantes
+            nb1 = 15; 	nb2 = 7;
+            nb1 = 52; 	nb2 = 324;
+            nb1 = 9; 	nb2 = 10;
+            nb1 = 4; 	nb2 = -52;
+            
+5. Ecrire la fonction plusgrand(a, b)
+    - Cette fonction retourne le plus grand des 2 nombres passés en paramètres
+        Par exemple :
+        plusGrand(46, 17) retourne 46
+        plusGrand(17, 46) retourne 46
+        plusGrand(17, 17) retourne 17
+    - Utilisez cette fonction avec les différentes valeurs suivantes :
+            nb1 = 15; 	nb2 = 7;
+            nb1 = 52; 	nb2 = 324;
+            nb1 = 4; 	nb2 = -52;
+            nb1 = 9; 	nb2 = 10;
+            
+6. Ecrire la fonction derniereValeur($tableau)
+	- Cette fonction retourne la dernière valeur d'un tableau
+        Par exemple :
+        nombres = [ 15, 7, 52, 324, 4, -52, 9, 10 ];
+        derniereValeur($nombres) retourne 10
+        
+	- Utilisez pour afficher :
+		La dernière valeur du tableau <i>nomDuTableau</i> est ...
+      avec les variables suivantes :
+       	valeurs = [ 4, "32", 65.2, "fin"];
+        jours = ["lundi", "mardi", "mercredi", "jeudi", "samedi", "dimanche"];            
+
+7. Ecrire la fonction plusPetit($tableau)
+	- Cette fonction retourne la plus petite valeur d'un tableau.
+        Il faut trouver comment garder en mémoire l'élement le plus petit 
+        d'un tableau de nombres lors du parcours des valeurs du tableau.
+        	Indice : utiliser une variable plusPetiteValeur qui contiendra 
+            		la plus petite valeur à comparer avec les autres valeurs 
+                    du tableau.
+        			Il faut parcourir tout le tableau et comparer chaque valeur 
+                    avec plusPetiteValeur. 
+                    Si la valeur comparée est plus petite que la valeur de
+                    plusPetiteValeur, alors vous affectez cette valeur du
+        			tableau à la variable plusPetiteValeur.
+        			Quand on a fini de parcourir le tableau, plusPetiteValeur 
+                    est égal à la plus petite valeur du tableau. 
+                    La fonction retourne la variable plusPetiteValeur.
+       				Vous devez trouver quelle valeur doit avoir $plusPetiteValeur 
+                    au départ.
+                    
+	- Utilisez cette fonction avec les tableaux suivants :
+        nombres = [ 15, 7, 52, 324, 4, -52, 9, 10 ];
+        notes = [ 12, 17, 4, 15, 20, 5 ];
+		
+      Vous devrez afficher toutes les valeurs du tableau et la plus petite valeur 
+      grâce à la fonction plusPetit()
+        ex :
+        La plus petite valeur du tableau [ 15, 7, 52, 324, 4, -52, 9, 10 ] est -52
+        La plus petite valeur du tableau [ 12, 17, 4, 15, 20, 5 ] est 4
+*/
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * JSON : JavaScript Object Notation
+ */
+const films = [
+    {
+        "id": 1,
+        "titre": "Star Wars",
+        "realisateur": "George Lucas"
+    },
+
+    {
+        "id": 2,
+        "titre": "Terminator 2",
+        "realisateur": "James Cameron"
+    },
+
+    {
+        "id": 5,
+        "titre": "Robocop",
+        "realisateur": "Paul Verhoeven"
+    }
+]; 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+
+
+
+
+
+
+
+/** Cette fonction retourne un nombre aléatoire compris entre min et max */
+function aleatoire(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+}
+
+
+
+/* 
+
+Quand l'utilisateur clique sur "Essayer", vous devez :
+    1. empêcher la soumission du formulaire
+    2. récupérer la valeur tapée dans l'input
+    3. vérifier que c'est un nombre et qu'il est compris entre 1 et 10
+    4. si c'est le cas, vérifier que ce qu'il a tapé est égal au nombre à trouver
+        qui va être calculé aléatoirement.
+
+    5. s'il a trouvé le nombre, dans la div#affichage, afficher :
+        Bravo, tu as trouvé le nombre ...
+       sinon
+            Raté, essaye encore
+    BONUS
+    6. tant qu'il n'a pas trouvé le bon nombre, continuer à lui demander 
+        d'essayer
+    7. Afficher le nombre de tentatives
+*/
